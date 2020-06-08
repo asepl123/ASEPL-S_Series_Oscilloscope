@@ -1,0 +1,23 @@
+﻿2020-06-08 14:55:06.530196 ; Session        ; Debug       ; Session log loaded as 'C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\SessionLogs\tap 2020-06-08 14-55-06.txt'. [21.5 ms]
+2020-06-08 14:55:06.606990 ; Session        ; Debug       ; Running '"C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\tap.exe" sdk vs-integration --install' in 'C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release'.
+2020-06-08 14:55:06.667829 ; Session        ; Debug       ; Microsoft Windows 10.0.18363 X64
+2020-06-08 14:55:06.667829 ; Session        ; Debug       ; .NET Framework 4.8.4180.0
+2020-06-08 14:55:06.702735 ; Resolver       ; Debug       ; Found 37/37 assembly files. [28.7 ms]
+2020-06-08 14:55:06.715700 ; Session        ; Debug       ; OpenTAP Engine 9.7.0+c65b0c5a X64
+2020-06-08 14:55:06.791498 ; Resolver       ; Debug       ; Found match for System.Reflection.Metadata, Version=1.4.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a in C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\Dependencies\System.Reflection.Metadata.1.4.3.0\System.Reflection.Metadata.dll
+2020-06-08 14:55:06.847349 ; Resolver       ; Debug       ; Found match for System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a in C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\Dependencies\System.Collections.Immutable.1.2.3.0\System.Collections.Immutable.dll
+2020-06-08 14:55:07.115629 ; Searcher       ; Debug       ; Ordered 36 assemblies according to references. [291 ms]
+2020-06-08 14:55:07.352996 ; PluginManager  ; Debug       ; Found 5 plugin assemblies containing 153 plugin types. [532 ms]
+2020-06-08 14:55:07.352996 ; PluginManager  ; Debug       ; Found version 9.7.0+c65b0c5a   of OpenTap.dll
+2020-06-08 14:55:07.352996 ; PluginManager  ; Debug       ; Found version 9.7.0+c65b0c5a   of OpenTap.Package.dll
+2020-06-08 14:55:07.352996 ; PluginManager  ; Debug       ; Found version 9.7.0+c65b0c5a   of OpenTap.Plugins.BasicSteps.dll
+2020-06-08 14:55:07.352996 ; PluginManager  ; Debug       ; Found version                  of OpenTap.Sdk.New.dll
+2020-06-08 14:55:07.352996 ; PluginManager  ; Debug       ; Found version 1.0.8+30d65bf9   of OpenTap.VSSdk.Installer.dll
+2020-06-08 14:55:07.352996 ; PluginManager  ; Debug       ; Searched 37 Assemblies. [533 ms]
+2020-06-08 14:55:07.445747 ; PluginManager  ; Debug       ; Loaded OpenTap. [513 us]
+2020-06-08 14:55:07.488633 ; Settings       ; Debug       ; No settings file exists for EngineSettings. A new instance with default values has been created. [16.1 ms]
+2020-06-08 14:55:07.561436 ; Session        ; Debug       ; Session log loaded as 'C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\SessionLogs\SessionLog 2020-06-08 14-55-06.txt'. [22.8 ms]
+2020-06-08 14:55:07.600333 ; PluginManager  ; Debug       ; Loaded OpenTap.Package. [6.59 ms]
+2020-06-08 14:55:07.607315 ; PluginManager  ; Debug       ; Loaded OpenTap.Sdk.New. [4.80 ms]
+2020-06-08 14:55:07.615293 ; PluginManager  ; Debug       ; Loaded OpenTap.VSSdk.Installer. [6.84 ms]
+2020-06-08 14:55:07.667154 ; PluginManager  ; Debug       ; Loaded OpenTap.Plugins.BasicSteps. [5.31 ms]

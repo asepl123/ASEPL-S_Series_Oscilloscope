@@ -1,0 +1,37 @@
+﻿2020-06-08 14:55:12.079024 ; Session        ; Debug       ; Session log loaded as 'C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\SessionLogs\tap 2020-06-08 14-55-11.txt'. [20.8 ms]
+2020-06-08 14:55:12.124903 ; Session        ; Debug       ; Running '"C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\tap.exe" communityeditionpopup' in 'C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release'.
+2020-06-08 14:55:12.189728 ; Session        ; Debug       ; Microsoft Windows 10.0.18363 X64
+2020-06-08 14:55:12.189728 ; Session        ; Debug       ; .NET Framework 4.8.4180.0
+2020-06-08 14:55:12.240593 ; Session        ; Debug       ; OpenTAP Engine 9.7.0+c65b0c5a X64
+2020-06-08 14:55:12.245580 ; Resolver       ; Debug       ; Found 67/67 assembly files. [50.6 ms]
+2020-06-08 14:55:12.363264 ; Resolver       ; Debug       ; Found match for System.Reflection.Metadata, Version=1.4.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a in C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\Dependencies\System.Reflection.Metadata.1.4.3.0\System.Reflection.Metadata.dll
+2020-06-08 14:55:12.418120 ; Resolver       ; Debug       ; Found match for System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a in C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\Dependencies\System.Collections.Immutable.1.2.3.0\System.Collections.Immutable.dll
+2020-06-08 14:55:13.144344 ; Searcher       ; Debug       ; Ordered 64 assemblies according to references. [748 ms]
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found 14 plugin assemblies containing 219 plugin types. [947 ms]
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.7.0+c65b0c5a   of OpenTap.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.7.0+c65b0c5a   of OpenTap.Package.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.7.0+c65b0c5a   of OpenTap.Plugins.BasicSteps.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.7.1+0031e3f6   of Keysight.OpenTap.Wpf.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.7.1+0031e3f6   of Keysight.OpenTap.Plugins.Csv.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.7.1+0031e3f6   of ResultsViewer.exe
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.7.1+0031e3f6   of RunExplorer.exe
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.7.1+0031e3f6   of Keysight.OpenTap.CommunityEditionPopup.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 1.0.0            of OpenTap.OSIntegration.Windows.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version                  of OpenTap.Sdk.New.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.4.2+3009aace   of Keysight.OpenTap.Plugins.ResultListener.SqlDatabase.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.4.2+3009aace   of Keysight.OpenTap.Plugins.ResultListener.PostgreSQL.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 9.4.2+3009aace   of Keysight.OpenTap.Plugins.ResultListener.SQLite.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Found version 1.0.8+30d65bf9   of OpenTap.VSSdk.Installer.dll
+2020-06-08 14:55:13.339859 ; PluginManager  ; Debug       ; Searched 67 Assemblies. [948 ms]
+2020-06-08 14:55:13.388698 ; PluginManager  ; Debug       ; Loaded OpenTap. [742 us]
+2020-06-08 14:55:13.413627 ; PluginManager  ; Debug       ; Loaded OpenTap.Plugins.BasicSteps. [4.98 ms]
+2020-06-08 14:55:13.464616 ; PluginManager  ; Debug       ; Loaded Keysight.OpenTap.Wpf. [22.9 ms]
+2020-06-08 14:55:13.496500 ; Settings       ; Debug       ; No settings file exists for EngineSettings. A new instance with default values has been created. [9.54 ms]
+2020-06-08 14:55:13.554346 ; Session        ; Debug       ; Session log loaded as 'C:\Users\ae1\source\repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\bin\Release\SessionLogs\SessionLog 2020-06-08 14-55-11.txt'. [31.3 ms]
+2020-06-08 14:55:13.574292 ; PluginManager  ; Debug       ; Loaded OpenTap.Package. [4.63 ms]
+2020-06-08 14:55:13.582275 ; PluginManager  ; Debug       ; Loaded ResultsViewer. [6.57 ms]
+2020-06-08 14:55:13.587261 ; PluginManager  ; Debug       ; Loaded RunExplorer. [5.43 ms]
+2020-06-08 14:55:13.599228 ; PluginManager  ; Debug       ; Loaded Keysight.OpenTap.CommunityEditionPopup. [11.4 ms]
+2020-06-08 14:55:13.603216 ; PluginManager  ; Debug       ; Loaded OpenTap.OSIntegration.Windows. [4.38 ms]
+2020-06-08 14:55:13.609200 ; PluginManager  ; Debug       ; Loaded OpenTap.Sdk.New. [4.82 ms]
+2020-06-08 14:55:13.616211 ; PluginManager  ; Debug       ; Loaded OpenTap.VSSdk.Installer. [6.43 ms]

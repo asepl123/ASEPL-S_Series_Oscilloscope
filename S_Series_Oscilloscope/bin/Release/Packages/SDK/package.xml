@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package InfoLink="http://www.keysight.com/find/TAP" Date="03/31/2020 08:00:03" LicenseRequired="" Name="SDK" Version="9.7.0+c65b0c5a" Architecture="AnyCPU" OS="Windows,Linux" xmlns="http://opentap.io/schemas/package">
+  <Description>OpenTAP’s SDK contains code example files, an MSBuild task to help create TapPackage files and the developer guide. This package demonstrates the core capabilities of OpenTAP and makes it faster and simpler to develop custom Test Automation solutions, especially for new developers.
+    <Status>Released</Status><Organisation>Keysight Technologies</Organisation></Description>
+  <Dependencies>
+    <PackageDependency Package="OpenTAP" Version="^9.7.0+c65b0c5a" />
+    <PackageDependency Package="OpenTAP" Version="^9.7.0+c65b0c5a" />
+  </Dependencies>
+  <Owner>OpenTAP</Owner>
+  <SourceUrl>https://gitlab.com/OpenTAP/opentap</SourceUrl>
+  <Files>
+    <File Path="Packages/SDK/Keysight.OpenTap.Sdk.MSBuild.dll">
+      <Hash>bbVR72Dq3aL2xr1spo3kIVmZyYQ=</Hash>
+    </File>
+    <File Path="Packages/SDK/OpenTap.Sdk.New.dll">
+      <Plugins>
+        <Plugin Type="OpenTap.Sdk.New.GenerateDut" BaseType="ICliAction">
+          <Name>dut</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>C# template for a DUT plugin. Requires a project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateInstrument" BaseType="ICliAction">
+          <Name>instrument</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>C# template for a Instrument plugin. Requires a project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateResultListener" BaseType="ICliAction">
+          <Name>resultlistener</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>C# template for a ResultListener plugin. Requires a project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateSetting" BaseType="ICliAction">
+          <Name>settings</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>C# template for a ComponentSetting plugin. Requires a project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateTestStep" BaseType="ICliAction">
+          <Name>teststep</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>C# template for a TestStep plugin. Requires a project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateTestPlan" BaseType="ICliAction">
+          <Name>testplan</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>Creates a TestPlan (.TapPlan) containing all TestSteps types defined in this project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateCliAction" BaseType="ICliAction">
+          <Name>cliaction</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>C# template for a CliAction plugin. Requires a project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GeneratePackageXml" BaseType="ICliAction">
+          <Name>packagexml</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>Package Definition file (package.xml).</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateProject" BaseType="ICliAction">
+          <Name>project</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>OpenTAP C# Project (.csproj). Including a new TestStep, TestPlan and package.xml.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateVs" BaseType="ICliAction">
+          <Name>vs</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>Visual Studio project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+            <String>integration</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateGitlab" BaseType="ICliAction">
+          <Name>gitlab-ci</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>GitLab CI build script. For building and publishing the TapPackage in this project.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+            <String>integration</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateVsCode" BaseType="ICliAction">
+          <Name>vscode</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>Files to enable building and debugging with vscode.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+            <String>integration</String>
+          </Groups>
+        </Plugin>
+        <Plugin Type="OpenTap.Sdk.New.GenerateGit" BaseType="ICliAction">
+          <Name>gitversion</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description>Configures automatic version of the package using version numbers generated from git history.</Description>
+          <Collapsed>false</Collapsed>
+          <Groups>
+            <String>sdk</String>
+            <String>new</String>
+            <String>integration</String>
+          </Groups>
+        </Plugin>
+      </Plugins>
+      <Hash>CIAa+CdMGDLYNq6pMv3x1rqznE0=</Hash>
+    </File>
+    <File Path="OpenTap.xml">
+      <Hash>3giWhAOqHzBUyHBQsHPp2HdX7bw=</Hash>
+    </File>
+    <File Path="Packages/SDK/PackageSchema.xsd">
+      <Hash>i2cNWC9dvSFItGP31f/JaeLTEFQ=</Hash>
+    </File>
+    <File Path="Packages/SDK/OpenTAP Developer Guide.pdf">
+      <Hash>53n/wSExvV5wiInH26iXf/t2hGE=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/.OpenTapIgnore">
+      <Hash>WpCHViduSOk6xCPhR6WNa+BKejU=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/Examples.sln">
+      <Hash>pHQT+kgMOunaBxyJqqycioSZ8hc=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/ExamplePlugin\ExamplePlugin.csproj">
+      <Hash>WKUXG84YfICaNHl5tJfvVGyZ9mk=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/ExamplePlugin\GeneratorInstrument.cs">
+      <Hash>b8oL5Fr9NFhmrfTzeCqvDI7GD34=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/ExamplePlugin\LowPassFilterDut.cs">
+      <Hash>oq1cS0Za4O2dQc4dSZ8rzAZJv+A=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/ExamplePlugin\MeasurePeakAmplitudeTestStep.cs">
+      <Hash>KFdopKm8pY/kWvHDUZixJ7xsbA8=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/ExamplePlugin\package.xml">
+      <Hash>H8hLwPXhXht1ILCD/vyVyYujBjU=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/ExamplePlugin\SomeSampleData.txt">
+      <Hash>7AgZG2dUotF0ImOQXz62cx7YLro=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/ExamplePlugin/Properties\AssemblyInfo.cs">
+      <Hash>Ly24ZfsSs1/KgSfLmUmMhD0r4W0=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/ExamplePlugin/Properties\launchSettings.json">
+      <Hash>/nhA97ZFLbWu24vXzq3r2bpgcOQ=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment\package.xml">
+      <Hash>Tm2nb9gQwjt3EniMaqOXirpWXbc=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment\PluginDevelopment.csproj">
+      <Hash>4GLXBYIb6t3t/sgjlULgzCr6oTk=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/GUI\ButtonCreation.cs">
+      <Hash>Az/jTMoEUrYwHpvtIeAY1AAeaaA=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/GUI\CustomBenchSettings.cs">
+      <Hash>JsKKAHWHDB6+8v/pkfrtwv+yh9A=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/GUI\ExampleSettings.cs">
+      <Hash>aahOKTi7yqV8cMj976Gb0jlj9/0=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/GUI\IPAnnotation.cs">
+      <Hash>7q0m/JMKYVLym2RmhYGNNNaotT8=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/GUI\TestPlanCustomImportExport.cs">
+      <Hash>Cs6jD2YFMOiI2b5RSuVeQZZ5Vbs=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/GUI\UserInputExample.cs">
+      <Hash>fwtf8G+CtP/SdPqDI09Ng1UeXQE=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\ConnectionStep.cs">
+      <Hash>qIT1e9qI/R+zKBuIa2dzvINARx0=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\FourPortDut.cs">
+      <Hash>O41WTp5YayB8yUGA8tm8p3Cj8r4=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\InterfaceBasedInstrument.cs">
+      <Hash>VRSoOygEhFSnGYFXgStnxWdogNk=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\MeasureUsingConnectionsStep.cs">
+      <Hash>LeGrlg+POMkIrZfklAzih1OvgpU=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\ScpiInstrumentExample.cs">
+      <Hash>bArmfX3vo+6umYQmWg/3qaETDY4=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\SetSwitchMatrixStep.cs">
+      <Hash>wbJw0Y1vtLLr12c7pI2mPELDX1Q=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\SetSwitchStep.cs">
+      <Hash>SqPCN5HIpGA0x+hM/uHI15linvk=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\SimpleDut.cs">
+      <Hash>7iDX7nTlYJkqU+blwnXUTjky20Y=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\SimpleInstrument.cs">
+      <Hash>X03VEzeI81xCotp0eGMI2Axo+jU=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\SwitchMatrixInstrument.cs">
+      <Hash>jqpPaanbWlqRg1iG2uOdGR5uQfY=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\TwoPortInstrument.cs">
+      <Hash>XXOpMVp4KFcK+f71ZPrATmWW7nw=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\TwoPositionSwitchInstrument.cs">
+      <Hash>w0ndt4m5hKJGOu2CHSG/SMMQC3g=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/InstrumentsAndDuts\UsingDutAndInstStep.cs">
+      <Hash>09cLQtvDZjAN5Zzt1M/NJTceWfE=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/Properties\AssemblyInfo.cs">
+      <Hash>Taq9XCTrcmVk/fqgKk+cS3GOlVE=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/Properties\launchSettings.json">
+      <Hash>/nhA97ZFLbWu24vXzq3r2bpgcOQ=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/ResultListeners\EventResultListener.cs">
+      <Hash>YSdv+4pmDUW5azeIxiqTRSmStdo=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/ResultListeners\ExampleResultListener.cs">
+      <Hash>oR8+p6df6dCQpzxYgQkWwNzkHX4=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment\TestSteps\DynamicStep.cs">
+      <Hash>uLUaT1fxZzia1Aj09C71tdbu5v4=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\AvailableValuesAttributeExample.cs">
+      <Hash>MGKJKjMjik/nIdbf2HKcwvYi+5c=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\BrowsableAttributeExample.cs">
+      <Hash>SVBeNEtifp4hAGFGYvfFxO+9U9M=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\ColumnDisplayAttributeExample.cs">
+      <Hash>AJOndKg5q0Q+H4GMH0XtOVyXA5o=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\DisplayAttributeExample.cs">
+      <Hash>5v1vSy3EbgN+MBfkT4N5GAsCffg=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\DynamicNameDisplayAttribute.cs">
+      <Hash>UCcZgyWkseA74Ozf6e8LgpWb8Do=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\EmbedPropertiesAttributeExample.cs">
+      <Hash>lFxzof2/2A8mlv/mSD5kDcNE4f4=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\EnabledIfAttributeExample.cs">
+      <Hash>+eYNyEi2/Bfgj8GkxFoip72Md10=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\FlagsAttributeExample.cs">
+      <Hash>Kk0iWKWhkFHf5PwYQtIAELgseSA=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\PathAttributeExample.cs">
+      <Hash>Ww9jSd77GA/S32Sdp1Gj+6e+LdA=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\ResultListenerIgnoreAttributeExample.cs">
+      <Hash>EgN2xFVOkNTIBiY5FjrBxd8SH58=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\ScpiAttributeExample.cs">
+      <Hash>L2XeE3UKYfYEHrHNfpzwKZBu62c=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\UnitAttributeExample.cs">
+      <Hash>urokDoFfJB4OrbknF8LMpKa3eog=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Attributes\XmlIgnoreAttributeExample.cs">
+      <Hash>nmmeJSljAEaflSKnBgEYFYbCndo=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/InputOutput\GenerateOutput.cs">
+      <Hash>sn53pZqgFzKL68fSDnnRu9w8sW4=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/InputOutput\HandleInput.cs">
+      <Hash>9ugtyh16Ci1T3ZL/wpY/xzAHxm8=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/ParentChild\ChildSeekingResources.cs">
+      <Hash>hagoT5UJTnrOf7iC4rxwhaGOCOo=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/ParentChild\ParentAnyChildren.cs">
+      <Hash>CEhQS5bg+duZaBYcbEQ1anCm1Uo=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/ParentChild\ParentWithResources.cs">
+      <Hash>kWXj1ThUrrYcjaYd/ecmlAODGJE=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/PublishResults\ResultsForXyArray.cs">
+      <Hash>OnmF22vqlyTLouloLWSzzZxLYa0=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/PublishResults\ResultsWithCustomClass.cs">
+      <Hash>GVrjMY8IP4aA/B7AOMLy/t25y6g=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/PublishResults\SetOfNameValuePairs.cs">
+      <Hash>pUHTq8lDFU8Y0Fn/XK1sVRR4blI=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/PublishResults\SingleNameValuePair.cs">
+      <Hash>9A0/y0Vv2PaVj+QM5Tm4yf9RXfQ=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Execution\AbortsTheTestPlan.cs">
+      <Hash>kFWKYyg8cbD3kt0jc900lpK31Dk=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Execution\AccessingComponentSettings.cs">
+      <Hash>RFamuhplHg6pZN6HDJVMoJZ2Qtw=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Execution\DeferTaskStep.cs">
+      <Hash>Gq0S+ld2g8cJGjT4YKsxT6/osqk=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Execution\LogMessages.cs">
+      <Hash>dph5vz6lm96VHGI5tDgkCthv92w=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Execution\OfferBreakExample.cs">
+      <Hash>u/NRzidf9KinscTUHRUQVOcLheQ=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Execution\SetVerdict.cs">
+      <Hash>mW8kb9/OTbrGHGC5xM0DLs3LqNg=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Settings\EnabledCheckBoxes.cs">
+      <Hash>CwcUwJ5Eoc41g6wEaQTWECMRllw=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Settings\ListOfObjects.cs">
+      <Hash>5uTbVFANFyn34l8gbq+frdosA5g=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment/TestSteps/Step Settings\RuleValidation.cs">
+      <Hash>Wrzn2ESkISdOm0AzWxRoukhesVU=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment.Gui\PluginDevelopment.Gui.csproj">
+      <Hash>a4kgLmykmIwQvGZYx9kNNyVOSd0=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment.Gui/Properties\AssemblyInfo.cs">
+      <Hash>waPcpokWBEYinQF7GTAdsGQYIcw=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment.Gui/Properties\launchSettings.json">
+      <Hash>/nhA97ZFLbWu24vXzq3r2bpgcOQ=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment.Gui/GUI\CustomControlProvider.cs">
+      <Hash>7azDWfxpbMfphXDkn2a8M/TlbYk=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment.Gui/GUI\DockablePanel.cs">
+      <Hash>fK+sKWyMBm+M3ZMJsObtbkg6zyU=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/PluginDevelopment.Gui/GUI\ToolsMenu.cs">
+      <Hash>0oJ45aBnz9Dq0jnyNa75Ax+KDJI=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/TestPlanExecution\BuildTestPlan.Api\BuildTestPlan.Api.csproj">
+      <Hash>hYMj5JbmW/XDgb40BdHb1D+0lE4=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/TestPlanExecution\BuildTestPlan.Api\Program.cs">
+      <Hash>NvRv8uUJ0Jd6KnlTaiOwyN+NpRs=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/TestPlanExecution\BuildTestPlan.Api\Properties\AssemblyInfo.cs">
+      <Hash>8Pjl8eTwzZhRwpbrpEv+XzzV+bI=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/TestPlanExecution\RunTestPlan.Api\Program.cs">
+      <Hash>sJ38IhsrO62LlqDqiYhVZtSSMm4=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/TestPlanExecution\RunTestPlan.Api\RunTestPlan.Api.csproj">
+      <Hash>DWX4yo7A98ByL0CGrAYzLtIAoAI=</Hash>
+    </File>
+    <File Path="Packages/SDK/Examples/TestPlanExecution\RunTestPlan.Api\Properties\AssemblyInfo.cs">
+      <Hash>oGYYDB1PCRu7B10FLM0HpRqggak=</Hash>
+    </File>
+    <File Path="Dependencies/Microsoft.Build.Utilities.Core.15.1.0.0/Microsoft.Build.Utilities.Core.dll">
+      <Hash>Y1KXklvPkQeILjBU/A0jkKv4S3I=</Hash>
+    </File>
+    <File Path="Dependencies/Microsoft.Build.Framework.15.1.0.0/Microsoft.Build.Framework.dll">
+      <Hash>9+mZIl6b8pkEPcTxuZlkCYpoly0=</Hash>
+    </File>
+    <File Path="Dependencies/System.Text.Encoding.CodePages.4.0.2.0/System.Text.Encoding.CodePages.dll">
+      <Hash>SKekaCftD3l7Nrrsj1f7mN5UFSQ=</Hash>
+    </File>
+    <File Path="Dependencies/System.Runtime.4.1.2.0/System.Runtime.dll">
+      <Hash>/WIq3lyuJjU6Irb6UKg2abcrbEE=</Hash>
+    </File>
+    <File Path="Dependencies/System.Resources.ResourceManager.4.0.1.0/System.Resources.ResourceManager.dll">
+      <Hash>v4On6YQYvekH3q6MDA8/sPbJ2xo=</Hash>
+    </File>
+    <File Path="Dependencies/System.IO.4.1.2.0/System.IO.dll">
+      <Hash>ppmcBLJDsDT47nrQ15884k35qdA=</Hash>
+    </File>
+    <File Path="Dependencies/System.Text.Encoding.4.0.11.0/System.Text.Encoding.dll">
+      <Hash>OUbf8LaPDKAWib1Ew0hVmt9Uglg=</Hash>
+    </File>
+    <File Path="Dependencies/System.Collections.4.0.11.0/System.Collections.dll">
+      <Hash>TZI7EAFCr6LgqLes2zpt5v65EUg=</Hash>
+    </File>
+    <File Path="Dependencies/System.Threading.4.0.11.0/System.Threading.dll">
+      <Hash>3dpJVy0RKUTsmrYrMZWaqTo4Zhg=</Hash>
+    </File>
+    <File Path="Dependencies/System.Runtime.InteropServices.4.1.2.0/System.Runtime.InteropServices.dll">
+      <Hash>LmowR707zuAfVdE5o8A+bU0tsUo=</Hash>
+    </File>
+    <File Path="Dependencies/System.Reflection.4.1.2.0/System.Reflection.dll">
+      <Hash>PKMd5/DweEVZ5ac+vQ77QsNNGPw=</Hash>
+    </File>
+    <File Path="Dependencies/System.Runtime.Handles.4.0.1.0/System.Runtime.Handles.dll">
+      <Hash>WEuGg5Q6jgrpixD0UslPYQnRxOo=</Hash>
+    </File>
+    <File Path="Dependencies/System.Globalization.4.0.11.0/System.Globalization.dll">
+      <Hash>hGcR1BYaOVD6ze+XA3iYpx9O/aE=</Hash>
+    </File>
+    <File Path="Dependencies/System.Runtime.Extensions.4.1.2.0/System.Runtime.Extensions.dll">
+      <Hash>fXG0a7migok4SqHt9csD1ks7z/A=</Hash>
+    </File>
+  </Files>
+</Package>

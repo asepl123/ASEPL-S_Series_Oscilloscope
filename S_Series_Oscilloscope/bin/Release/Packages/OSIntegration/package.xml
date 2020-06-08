@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package Date="12/18/2019 13:22:47" LicenseRequired="" Name="OSIntegration" Version="1.2.1+3fecaa50" Architecture="AnyCPU" OS="Windows" xmlns="http://opentap.io/schemas/package">
+  <Description>This package makes it possible to create Windows file associations and Start Menu items if specified by the plugin.
+    <Status>Released</Status><Organisation>Keysight Technologies</Organisation></Description>
+  <Dependencies>
+    <PackageDependency Package="OpenTAP" Version="^9.5.0+45ab79bc" />
+  </Dependencies>
+  <Owner>Keysight Technologies, Inc.</Owner>
+  <Files>
+    <File Path="Packages/OSIntegration/OpenTap.OSIntegration.Windows.dll">
+      <Plugins>
+        <Plugin Type="OSIntegration.Windows.StartMenuItemData" BaseType="ICustomPackageData">
+          <Name>StartMenuEntry</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Collapsed>false</Collapsed>
+          <Groups />
+        </Plugin>
+        <Plugin Type="OSIntegration.Windows.FileAssociationData" BaseType="ICustomPackageData">
+          <Name>FileAssociation</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Collapsed>false</Collapsed>
+          <Groups />
+        </Plugin>
+        <Plugin Type="OSIntegration.Windows.OSIntegrationInstallAction" BaseType="ICustomPackageAction">
+          <Name>OSIntegrationInstallAction</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description></Description>
+          <Collapsed>false</Collapsed>
+        </Plugin>
+        <Plugin Type="OSIntegration.Windows.OSIntegrationUninstallAction" BaseType="ICustomPackageAction">
+          <Name>OSIntegrationUninstallAction</Name>
+          <Order>-10000</Order>
+          <Browsable>true</Browsable>
+          <Description></Description>
+          <Collapsed>false</Collapsed>
+        </Plugin>
+        <Plugin Type="OSIntegration.Windows.FirewallRule" BaseType="ICliAction">
+          <Name>firewall</Name>
+          <Order>-10000</Order>
+          <Browsable>false</Browsable>
+          <Collapsed>false</Collapsed>
+          <Groups />
+        </Plugin>
+        <Plugin Type="OSIntegration.Windows.IconTool" BaseType="ICliAction">
+          <Name>icons</Name>
+          <Order>-10000</Order>
+          <Browsable>false</Browsable>
+          <Collapsed>false</Collapsed>
+          <Groups />
+        </Plugin>
+        <Plugin Type="OSIntegration.Windows.FileAssociation" BaseType="ICliAction">
+          <Name>associations</Name>
+          <Order>-10000</Order>
+          <Browsable>false</Browsable>
+          <Collapsed>false</Collapsed>
+          <Groups />
+        </Plugin>
+        <Plugin Type="OSIntegration.Windows.ElevateActions" BaseType="ICliAction">
+          <Name>elevated</Name>
+          <Order>-10000</Order>
+          <Browsable>false</Browsable>
+          <Collapsed>false</Collapsed>
+          <Groups />
+        </Plugin>
+      </Plugins>
+      <Hash>bcYz8pYDqHRG+hmgF9Q9n3rKJhA=</Hash>
+    </File>
+  </Files>
+</Package>
