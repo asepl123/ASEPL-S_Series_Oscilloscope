@@ -1,6 +1,6 @@
 C:\Users\ae1\source\repos\Output\S_Series_Oscilloscope\S_Series_Oscilloscope.dll
-C:\Users\ae1\source\repos\Output\S_Series_Oscilloscope\S_Series_Oscilloscope.pdb
 C:\Users\ae1\Source\Repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\obj\Debug\S_Series_Oscilloscope.csprojAssemblyReference.cache
+C:\Users\ae1\source\repos\Output\S_Series_Oscilloscope\S_Series_Oscilloscope.pdb
 C:\Users\ae1\Source\Repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\obj\Debug\S_Series_Oscilloscope.csproj.CoreCompileInputs.cache
 C:\Users\ae1\Source\Repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\obj\Debug\S_Series_Oscilloscope.csproj.CopyComplete
 C:\Users\ae1\Source\Repos\tarang1606\ASEPL-S_Series_Oscilloscope\S_Series_Oscilloscope\obj\Debug\S_Series_Oscilloscope.dll

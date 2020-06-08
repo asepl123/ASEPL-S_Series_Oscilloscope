@@ -21,6 +21,10 @@
     <OutputPath>C:\Users\ae1\source\repos\Output\S_Series_Oscilloscope\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>C:\Users\ae1\source\repos\Output\S_Series_Oscilloscope\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
