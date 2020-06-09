@@ -24,8 +24,9 @@ namespace S_Series_Oscilloscope
         public enum SourceType { CHANnel, DIFF, COMMonmode, FUNCtion, WMEMory, MTRend, MSPectrum }
         #endregion
 
-            #region Settings
-            [Display("Instrument", Group: "Instrument Setting", Description: "Configure Network Analyzer", Order: 1.1)]
+        #region Settings
+        
+        [Display("Instrument", Group: "Instrument Setting", Description: "Configure Network Analyzer", Order: 1.1)]
         public Oscilloscope MyInst { get; set; }
 
         [DisplayAttribute("Math", "", "Input Parameters", 2.1)]
